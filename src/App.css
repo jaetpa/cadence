@@ -1,3 +1,20 @@
+:root {
+
+--main-color: #256EFF;
+--main-color-highlight: #3377FF;
+--background-color: #D6E4FF;
+--grid-background-color: #B8D0FF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  
+  background-color: var(--background-color);
+}
+
 .App {
   text-align: center;
 }
@@ -26,6 +43,85 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.navigation {
+  background-color: var(--main-color);
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-logo {
+  color: white;
+  font-family: "Oleo Script";
+  font-size: 4rem;
+  padding: 1rem;
+}
+
+.app-logo a{
+  text-decoration: none;
+}
+
+.app-logo a:active, .app-logo a:visited {
+  color: white;
+}
+
+.login-signup-buttons {
+  height: 100%;
+  max-width: 400px;
+  flex: none;
+  padding: 0 1rem;
+
+}
+
+.nav-button {
+  height: 100%;
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Nunito Sans";
+  font-weight: bo;
+}
+
+.nav-button:hover {
+  background-color: var(--main-color-highlight);
+}
+
+.search-bar {
+  /*border: 2px black solid;*/
+  border: none;
+  border-radius: 20px;
+  height: 2rem;
+  padding: 0 1rem;
+  margin: 0 2rem;
+  flex: auto;
+}
+
+.content-container {
+  height: 100vh;
+  margin: 0 1rem 0 1rem;
+}
+
+.content-grid {
+  background-color: var(--grid-background-color);
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  
+  grid-template-columns: repeat(1fr, 3);
+  gap: 1rem;
+}
+
+.grid-box {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px 2px #7b7b7b30;
 }
 
 @keyframes App-logo-spin {
