@@ -1,8 +1,10 @@
 import React from "react";
+import CardHeader from "./CardHeader";
 const Card = () => {
     return ( 
     <div className="w-100 h-80 rounded-lg drop-shadow-lg bg-blue-50">
-    </div> );
+        <CardHeader></CardHeader>
+    </div> )
 }
  
 export default Card;
