@@ -3,7 +3,7 @@ import Avatar from "../Avatar/Avatar";
 
 const CardHeader = () => {
     return ( 
-        <div className="h-36 p-4 flex flex-row gap-4">
+        <div className="h-28 mb-4 flex flex-row gap-4">
             <Avatar />
             <div className="flex flex-col justify-center items-start">
                 <div className="text-2xl"><a href="">@shanselman</a></div>
